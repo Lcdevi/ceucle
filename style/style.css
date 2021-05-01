@@ -1,0 +1,19 @@
+*, ::after, ::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+*:focus,*:hover {
+	outline: none;
+}
+
+img {
+	width: 100%;
+}
+
+#subscribe {
+	width:80vw;
+	border: 1px solid red;
+	display: flex;
+}
