@@ -110,7 +110,7 @@ button {
 @media (max-width: 1039px) {
 
 	#responsive-div {
-		padding: 108px 20px 0 0;
+		padding: 108px 0 0 0;
 		height: 100vh;
 		display: flex;
 		flex-direction: column;
@@ -121,6 +121,7 @@ button {
 		padding: 0;
 		align-items: flex-end;
 		margin-top: 150px;
+		padding-right: 10px;
 	}
 	#subscribe-text {
 		line-height: 2;
