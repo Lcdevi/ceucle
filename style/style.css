@@ -1,3 +1,15 @@
+/* to use special fonts */
+
+@font-face {
+	font-family: "Athelas";
+	src: url("/assets/fonts/Athelas-Regular.woff") format("woff");
+}
+ 
+@font-face {
+	font-family: "Avenir";
+	src: url("/assets/fonts/AvenirLTStd-Roman.woff") format("woff");
+ }
+
 *, ::after, ::before {
 	margin: 0;
 	padding: 0;
@@ -8,12 +20,129 @@
 	outline: none;
 }
 
-img {
-	width: 100%;
+#main-img {
+	max-width: 100%;
 }
 
 #subscribe {
-	width:80vw;
-	border: 1px solid red;
+	width:100%;
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 42px 0 100px 0;
+	padding: 0 0 0 20%;
+	font-size: 17px;
+}
+
+#subscribe-text {
+	text-align: right;
+	line-height: 1.4;
+}
+
+#subscribe-text :nth-child(0n+1) {
+	font-family: "Athelas", serif;
+}
+
+#subscribe-text :nth-child(2) {
+	font-family: "Avenir", sans-serif;
+}
+
+#email-placeholder {
+	background-color: #E4DED2;
+	width: 330px;
+	height: 30px;
+	margin: 0 0 0 14px;
+	border: none;
+	padding: 5px;
+	color: #65655D;
+}
+
+button {
+	width: 30px;
+	height: 30px;
+	border: none;
+	padding: 0;
+	margin-left: -4px;
+	background-color: #B1B2A3;
+	color: #56564E;
+	cursor: pointer;
+}
+
+.logo-social {
+	width: 30px;
+	height: 30px;
+	margin: 0 5px;
+}
+
+#social {
+	text-align: right;
+	position: sticky;
+	bottom: 10px;
+	padding: 0 20px 0 0;
+}
+
+
+/* écran smartphone au dessous de 414px */
+
+@media (max-width: 414px) {
+
+	#responsive-div {
+		padding: 200px;
+	}
+	#subscribe {
+		font-size: 15px;
+	}
+	#subscribe-text {
+		width: 60vw;
+		margin: 0 0 10px 0 !important;
+	}
+	p {
+		text-align: left;
+		line-height: 1.4;
+	}
+	#email-placeholder {
+		width: 60vw;
+	}
+}
+
+/* écran tablette en dessous de 1039px */
+
+@media (max-width: 1039px) {
+
+	#responsive-div {
+		padding: 108px 20px 0 0;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	#subscribe {
+		flex-direction: column;
+		padding: 0;
+		align-items: flex-end;
+		margin-top: 150px;
+	}
+	#subscribe-text {
+		line-height: 2;
+		margin: 0 0 27px 0;
+	}
+	#social {
+		display: flex;
+		justify-content: center;
+		padding: 0;
+	}
+}
+
+/* écran 4K // écrans au dessus de 1600px */
+
+@media (min-width: 1600px) {
+
+	#main-img {
+		max-width: 1600px;
+	}
+	#main-img-section {
+		display: flex;
+		justify-content: center;
+	}
+
 }
