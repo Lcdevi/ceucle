@@ -3,7 +3,6 @@ function sendMail(params) {
     var tempParams = {
         email: document.getElementById("email").value
     };
-		console.log("tempParams--->", tempParams)
 
 		emailjs.send('service_dapgoeh', 'template_0r3ynqe', tempParams)
 			.then((res) => {
