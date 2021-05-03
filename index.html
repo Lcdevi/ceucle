@@ -6,6 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="./style/style.css" rel="stylesheet">
 	<script src="./script/script.js"></script>
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+	<script type="text/javascript">
+	(function() {
+		emailjs.init("user_Px6NrRyRJfhGW63Y8PmNy");
+	})();
+	</script>
+
 	<link rel="icon" type="image/png" href="./assets/img/favicon.png" />
 	<title>cèucle</title>
 </head>
@@ -21,10 +29,8 @@
 				<p>inscrivez-vous à notre newsletter pour être informé du lancement</p>
 				<p>subscribe to our newsletter to be informed of the launch</p>
 			</div>
-			<form>
-				<input type="email" id="email-placeholder" placeholder="addresse e-mail">
-				<button>ok</button>
-			</form>
+			<input type="email" name="email" id="email" placeholder="addresse e-mail">
+			<button onclick="sendMail()">ok</button>
 		</section>
 		
 		<section id="social">
