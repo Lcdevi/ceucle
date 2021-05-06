@@ -43,7 +43,7 @@
  width: 300px;
 }
 
-h2 {
+p {
 	font-family: 'Avenir', sans-serif;
 }
 
@@ -84,4 +84,9 @@ button {
 	background-color: #B1B2A3;
 	color: #56564E;
 	cursor: pointer;
+}
+
+@media (max-width: 414px) {
+
+
 }
