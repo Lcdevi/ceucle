@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./style/style-contact.css" rel="stylesheet">
+	<script src="./script/script-contact.js"></script>
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+	<script type="text/javascript">
+	(function() {
+		emailjs.init("user_Px6NrRyRJfhGW63Y8PmNy");
+	})();
+	</script>
+
+  <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
+  <title>cèucle</title>
+</head>
+<body>
+
+	<section id="header">
+		<a href="/index.html">
+			<img src="./assets/img/header-contact-page.jpg" alt="header ceucle vetement logo céucle">
+		</a>
+	</section>
+
+	<section id="formulaire-contact">
+		<div id="div-contact">
+			<h2>contact</h2>
+		</div>
+		<div id="formulaire">
+			<label for="name">nom</label>
+			<input type="text" name="name" id="name">
+			<label for="emailform">e-mail</label>
+			<input type="email" name="emailform" id="emailform">
+			<label for="message">message</label>
+			<textarea name="message" id="message" cols="30" rows="10"></textarea>
+			<div>
+				<button onclick="sendMail()">ok</button>
+			</div>
+		</div>
+	</section>
+    
+</body>
+</html>

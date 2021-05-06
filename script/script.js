@@ -26,6 +26,4 @@ function sendMail(params) {
 		alert("Veuillez saisir un email valide")
 	}
 
-
-
 }
