@@ -35,11 +35,11 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin: 50px 0 40px 0;
+	margin: 40px 0 40px 0;
 }
 
 #div-contact {
- margin: 0 0 20px 0;
+ margin: 20px 0 20px 0;
  width: 300px;
 }
 
@@ -87,6 +87,15 @@ button {
 	cursor: pointer;
 }
 
+.validatesubscribe {
+	font-size: 15px;
+	color: white;
+	font-family: 'Athelas';
+}
+
+.validateappears {
+	color: #B1B2A3;
+}
 
 /* écran smartphone au dessous de 414px */
 

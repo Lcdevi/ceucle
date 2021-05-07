@@ -85,6 +85,15 @@ button {
 	padding: 0 20px 0 0;
 }
 
+.validatesubscribe {
+	color: white;
+	text-align: right;
+	font-size: 14px;
+}
+
+.validateappears {
+	color: #B1B2A3;
+}
 
 /* écran smartphone au dessous de 414px */
 
@@ -105,6 +114,9 @@ button {
 		line-height: 1.4;
 	}
 	#email {
+		width: 60vw;
+	}
+	#validatesubscribe {
 		width: 60vw;
 	}
 }

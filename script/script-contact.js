@@ -3,6 +3,8 @@ function sendMail(params) {
   let resetMessage = document.getElementById("message")
   let resetName = document.getElementById("name")
 
+	let element = document.getElementById("validatesubscribe");
+
 	var tempParams = {
 		emailform: document.getElementById("emailform").value,
 		message: document.getElementById("message").value,
@@ -28,6 +30,9 @@ function sendMail(params) {
 		resetEmail.value = resetEmail.defaultValue;
 		resetMessage.value = resetMessage.defaultValue;
 		resetName.value = resetName.defaultValue;
+
+		element.classList.add("validateappears");
+
 
 	} else {
 		alert("Veuillez saisir un email valide")

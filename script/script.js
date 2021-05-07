@@ -1,5 +1,6 @@
 function sendMail(params) {
 	let resetEmail = document.getElementById("email")
+	let element = document.getElementById("validatesubscribe");
 
 	var tempParams = {
 			email: document.getElementById("email").value
@@ -21,6 +22,8 @@ function sendMail(params) {
 		})
 		
 		resetEmail.value = resetEmail.defaultValue;
+		
+		element.classList.add("validateappears");
 
 	} else {
 		alert("Veuillez saisir un email valide")
