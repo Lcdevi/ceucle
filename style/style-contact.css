@@ -89,12 +89,13 @@ button {
 
 .validatesubscribe {
 	font-size: 15px;
-	color: white;
 	font-family: 'Athelas';
+	display: none;
 }
 
 .validateappears {
 	color: #B1B2A3;
+	display: block;
 }
 
 /* écran smartphone au dessous de 414px */

@@ -86,13 +86,14 @@ button {
 }
 
 .validatesubscribe {
-	color: white;
 	text-align: right;
 	font-size: 14px;
+	display: none;
 }
 
 .validateappears {
 	color: #B1B2A3;
+	display: block;
 }
 
 /* écran smartphone au dessous de 414px */
