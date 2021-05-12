@@ -31,6 +31,7 @@ function sendMail(params) {
 		resetMessage.value = resetMessage.defaultValue;
 		resetName.value = resetName.defaultValue;
 
+
 		element.classList.add("validateappears");
 
 
